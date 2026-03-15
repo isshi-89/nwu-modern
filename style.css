@@ -1,4 +1,282 @@
-*  {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Zen Maru Gothic", sans-serif;
+    color: #210132;
+}
+.firstview {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.fv-img img{
+    width: 65%;
+    z-index: -1;
+}
+
+h1 {
+    font-family: "Lily Script One", system-ui;
+    font-size: 80px;
+    color: #ffffff;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+h1 span{
+    font-family: "Lily Script One", system-ui;
+    color: #ffffff;
+    padding-left: 100px;
+}
+
+.title {
+    display: flex;        
+    align-items: center;  
+    position: absolute;
+    top: 50%;
+    right: 15%;
+}
+
+.title img{
+    margin-right: -50px;
+}
+
+
+.logo img{
+    position: absolute;
+    top: 75%;
+    right: 30%;
+}
+
+nav {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+}
+
+nav ul{
+    text-align: right;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    font-size: 24px; 
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #21013250;
+}
+
+.nav-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+.title p{
+    font-family: "Kiwi Maru", serif;
+    font-weight: 500;
+    font-size: 64px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 60px 0;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #210132;
+}
+
+h2 span{
+    font-size: 32px;
+}
+
+#about {
+    background-color: #E1ADFE30;
+}
+.about-content p{
+    font-size: 16px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-weight: 500;
+    padding: 50px 0;
+    line-height: 2.4em;
+    letter-spacing: 0.1em;
+}
+
+.about-content :nth-child(2){
+    padding-bottom: 20px;
+}
+
+#events {
+    background-color: #21013206;
+}
+
+#q-a {
+    background-color: #BAAEFE30;
+}
+
+.questions {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.accordion {
+    margin: 30px auto;
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 4px 4px #21013250;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.accordion:hover {
+    transform: translateY(-2px);
+}
+
+
+.accordion_title {
+    position: relative;
+    border: none;
+    display: block;
+    list-style: none;
+    width: 100%;
+    cursor: pointer;
+    background: #ffffff;
+    padding: 1.4em 1.6em 1.4em;
+    line-height: 1.6em;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    font-weight: 500;    
+    font-size: 1.1rem;
+}
+
+.accordion_title::before {
+    content: "Q";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #E1ADFE; 
+    color: white;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+    font-family: "Lily Script One", system-ui;
+    font-size: 20px;
+}
+
+summary.accordion_title::-webkit-details-marker {
+    display:none;
+}
+
+.accordion_title:after {
+    content: "+";
+    position: absolute;
+    top: calc(50% - 0.5em);
+    right: 20px;
+    line-height: 1;
+    padding: 0;
+    pointer-events: none;
+}
+
+.accordion::details-content {
+    opacity: 0;
+    block-size: 0;
+    transition: .3s;
+    transition-property: display, opacity, block-size, padding;
+    transition-behavior: allow-discrete;
+    line-height: 1.6em;
+    background: #ffffff;
+}
+
+.accordion .accordion_content {
+    padding: 0 1.4em;
+}
+.accordion_contents {
+    background-color: #D7E59460; 
+    margin: 0 20px 20px 75px; 
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.accordion .accordion_content > *:first-of-type {
+    margin-top: 0;
+}
+
+.accordion .accordion_content > *:last-of-type {
+    margin-bottom: 0;
+}
+
+.accordion[open]::details-content {
+    opacity: 1;
+    block-size: auto;
+    block-size: calc-size(auto, size);
+}
+
+.accordion[open] .accordion_content {
+    padding: 1.4em;
+}
+
+.accordion[open] .accordion_title:after {
+    content: "-";
+    color: #210132;
+}
+
+.faq-comment p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.message p{
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 180px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: #E1ADFE50; 
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 1080px){
+    h1 {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 840px){
+    h1 {
+        font-size: 48px;
+    }
 }
