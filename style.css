@@ -66,7 +66,7 @@ nav li{
 
 nav a{
     font-size: 24px; 
-    line-height: 50px;
+    line-height: 60px;
     letter-spacing: 0.1em;
     font-weight: 500;
     text-decoration: none;
@@ -79,7 +79,7 @@ nav a:hover {
 
 .nav-img{
     position: absolute;
-    top: 0;
+    top: -2%;
     right: 0;
     z-index: -2;
 }
@@ -90,17 +90,16 @@ nav a:hover {
 }
 
 .container {
-    width: 100%;
     margin: 0 auto;
     max-width: 1280px;
-    padding: 60px 0;
+    padding: 80px 20px;
 }
 
 .container h2{
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     color: #210132;
 }
 
@@ -110,6 +109,7 @@ h2 span{
 
 #about {
     background-color: #E1ADFE30;
+    position: relative;
 }
 .about-content p{
     font-size: 16px;
@@ -124,6 +124,75 @@ h2 span{
 
 .about-content :nth-child(2){
     padding-bottom: 20px;
+}
+
+.about-img img{
+    position: absolute;
+    z-index: -100;
+}
+
+.about-img img:nth-child(1){
+    bottom: 0;
+    left: 0;
+}
+
+.about-img img:nth-child(2){
+    top: 0;
+    right: 0;
+}
+
+.sche-boxes {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    row-gap: 60px;
+}
+
+.sche-box {
+    max-width: 160px;
+}
+
+
+.sche-month {
+    text-align: center;
+    margin: -150px 0 0 10px;
+}
+
+.sche-month:nth-child(6) {
+    margin: -150px 0 0 5px;
+}
+
+.sche-month p{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.sche-month span {
+    font-size: 32px;
+}
+
+.sche-content {
+    display: flex;
+    height: 96px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;  
+}
+
+.sche-content p{
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.sche-info {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 20px 0 0;
 }
 
 #events {
