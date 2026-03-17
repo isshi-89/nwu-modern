@@ -4,6 +4,7 @@
     padding: 0;
     font-family: "Zen Maru Gothic", sans-serif;
     color: #210132;
+   
 }
 
 .firstview {
@@ -50,6 +51,13 @@ h1 span{
     font-weight: 500;
     font-size: 64px;
 }
+
+.fadein{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
 
 .logo img{
     position: absolute;
@@ -145,6 +153,7 @@ h2 span{
 
 .sche-all {
     padding: 0 20px;
+    margin: 100px auto;
 }
 
 .sche-boxes {
@@ -198,7 +207,7 @@ h2 span{
     font-weight: 500;
     display: flex;
     justify-content: flex-end;
-    padding: 50px 20px 0 0;
+    padding: 100px 20px 0 0;
 }
 #events {
     background-color: #21013206;
@@ -236,7 +245,7 @@ h2 span{
     width: 50%;
     min-height: 450px;
     position: relative;
-    padding: 10px;
+    padding: 50px;
 }
 
 .event-img img:nth-child(1){
@@ -274,6 +283,7 @@ h2 span{
     align-items: center;
     position: relative;
     padding: 20px 0;
+    min-height: 300px;
 }
 
 .event:nth-of-type(odd) .event-box{
@@ -302,7 +312,7 @@ h2 span{
     font-family: "Lily Script One", system-ui;
     font-size: 40px;
     position: absolute;
-    top: -15%;
+    top: -18%;
 }
 
 .event:nth-of-type(odd) .event-month p{
