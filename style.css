@@ -209,8 +209,8 @@ h2 span{
     justify-content: space-between;
     width: 100%;
     overflow: hidden;
-    margin: 100px 0;
 }
+
 
 .event-content {
     position: relative;
@@ -236,11 +236,16 @@ h2 span{
     width: 50%;
     min-height: 450px;
     position: relative;
+    padding: 10px;
 }
 
 .event-img img:nth-child(1){
     width: 600px;
     z-index:1;
+}
+
+.event:first-of-type {
+    margin-bottom: 100px;           
 }
 
 .event-img1 img:nth-child(2){
@@ -610,6 +615,12 @@ footer {
         display: none;
     }
 
+    .event:nth-child(1){
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    
     .message p{
         font-size: 16px;
     }
