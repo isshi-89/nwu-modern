@@ -504,7 +504,7 @@ summary.accordion_title::-webkit-details-marker {
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 30px;
-    margin: 100px 0 50px 0;
+    margin: 100px 40px 50px;
 }
 
 .sns-btn {
@@ -575,15 +575,12 @@ summary.accordion_title::-webkit-details-marker {
     text-align: center;
 }
 
-.sns-btn a p{
-    font-size: 16px;
+.sns-btn p{
+    font-size: 21px;
     font-weight: 500;
 }
-.sns-name p:nth-child(1){
-    font-size: 21px;
-}
-.sns-name p:nth-child(2){
-    font-size: 21px;
+.sns-x1 p, .sns-x2 p{
+    font-size: 18px;
 }
 
 .sns-btn img{
