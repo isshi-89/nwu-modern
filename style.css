@@ -4,7 +4,7 @@
     padding: 0;
     font-family: "Zen Maru Gothic", sans-serif;
     color: #210132;
-   
+    border: 1px solid red;
 }
 
 .firstview {
@@ -488,6 +488,7 @@ summary.accordion_title::-webkit-details-marker {
     text-align: center;
 }
 
+
 .message {
     margin: 50px 0;
 }
@@ -623,10 +624,18 @@ footer {
     }
 
     .event:nth-child(1){
-        flex-direction: column;
-        justify-content: space-between;
+        flex-direction:column-reverse;
     }
 
+    .event-box .event-img{
+        width: 100vw;
+    }
+
+    .event-background {
+        width: 100%;
+    }
+    
+    
     
 }
 
