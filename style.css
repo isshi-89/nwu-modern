@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Zen Maru Gothic", sans-serif;
-    color: #210132;
+    color: #210132; 
 }
 
 .firstview {
@@ -152,7 +152,7 @@ h2 span{
 
 .sche-all {
     padding: 0 60px;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 .sche-boxes {
@@ -224,13 +224,13 @@ h2 span{
     position: relative;
 }
 
-.event:nth-of-type(odd) .event-box{
+.fadein:nth-of-type(odd) .event-box{
     position: absolute;
     left: 20%;
     top: 100px;
 }
 
-.event:nth-of-type(even) .event-box{
+.fadein:nth-of-type(even) .event-box{
     position: absolute;
     right: 20%;
     top: 100px;
@@ -285,7 +285,7 @@ h2 span{
     min-height: 300px;
 }
 
-.event:nth-of-type(odd) .event-box{
+.fadein:nth-of-type(odd) .event-box{
     margin-right: -100px;
 }
 
@@ -299,11 +299,11 @@ h2 span{
     z-index: -1;
 }
 
-.event:nth-of-type(odd) .event-shadow {
+.fadein:nth-of-type(odd) .event-shadow {
     left: -30px;
 }
 
-.event:nth-of-type(even) .event-shadow {
+.fadein:nth-of-type(even) .event-shadow {
     right: -30px;
 }
 
@@ -314,12 +314,12 @@ h2 span{
     top: -18%;
 }
 
-.event:nth-of-type(odd) .event-month p{
+.fadein:nth-of-type(odd) .event-month p{
     left: 5%;
     right: auto;
 }
 
-.event:nth-of-type(even) .event-month p{
+.fadein:nth-of-type(even) .event-month p{
     right: 5%;
     left: auto;
 }
@@ -487,7 +487,6 @@ summary.accordion_title::-webkit-details-marker {
     text-align: center;
 }
 
-
 .message {
     margin: 50px 0;
 }
@@ -575,7 +574,7 @@ summary.accordion_title::-webkit-details-marker {
     text-align: center;
 }
 
-.sns-btn a {
+.sns-btn p{
     font-size: 21px;
     font-weight: 500;
 }
@@ -623,18 +622,10 @@ footer {
     }
 
     .event:nth-child(1){
-        flex-direction:column-reverse;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    .event-box .event-img{
-        width: 100vw;
-    }
-
-    .event-background {
-        width: 100%;
-    }
-    
-    
     
 }
 
