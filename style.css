@@ -152,7 +152,7 @@ h2 span{
 }
 
 .sche-all {
-    padding: 0 20px;
+    padding: 0 60px;
     margin: 100px auto;
 }
 
@@ -631,9 +631,6 @@ footer {
     }
 
     
-    .message p{
-        font-size: 16px;
-    }
 }
 
 @media (max-width: 840px){
@@ -675,6 +672,10 @@ footer {
 @media (max-width: 720px) {
     h1 span{
         padding-left: 50px;
+    }
+
+    .message p{
+        font-size: 16px;
     }
     
 }
