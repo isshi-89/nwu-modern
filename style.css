@@ -205,39 +205,81 @@ h2 span{
     background-color: #21013206;
 }
 
-.background {
-    background-image: url(image/event-background.png);
-    width: 100%;
-}
-
 .event {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 0;
+    padding: 20px 0;
+    margin-top: 50px;
+    position: relative;
 }
 
 .event-content {
-    position: relative;
-    max-width: 500px;
+    max-width: 100%;
+    min-height: 500px;
+    margin-bottom: 50px;
 }
 
-
-.event-box:nth-child(odd).event-background {
-    position: absolute;
-    top: 0%;
-    left: 0;
-    width: 100%;
+.event-background {
     z-index: -1;
 }
 
-.event-box:nth-child(even).event-background {
+.event-img1 img:nth-child(1){
     position: absolute;
-    top: 0%;
+    top: 10%;
     right: 0;
-    width: 100%;
+    z-index: 1;
+    width: 60%;
+    height: auto;
     z-index: -1;
 }
+
+.event-img1 img:nth-child(2){
+    position: absolute;
+    width: 250px;
+    right: 5%;
+    top: 50%;
+    z-index: 3;
+}
+
+.event-img2 img:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60%;
+    height: auto;
+    z-index: -1;
+}
+
+.event-img2 img:nth-child(2){
+    position: absolute;
+    width: 300px;
+    left: 8%;
+    top: 65%;
+    z-index: 1;
+}
+
+.event:nth-of-type(odd) .event-background{
+   margin-top: -30%;
+}
+
+.event:nth-of-type(even) .event-background{
+    position: absolute;
+    right: 0%;
+    top: -10%;
+}
+
+.event:nth-of-type(even) .event-box{
+    position: absolute;
+    right: 10%;
+}
+
+.event:nth-of-type(2) .event-box {
+    top: 50%;
+}
+
+.event:nth-of-type(4) .event-box {
+    top: 20%;
+}
+
 
 .event-box{
     background-color: #ffffff;
@@ -249,45 +291,42 @@ h2 span{
     align-items: center;
     position: relative;
     padding: 20px 0;
-    margin-top: 50px;
 }
-
 
 .event-shadow {
     background-color: #21013230;
     width: 100%;
     height: 90%;
     position: absolute;
+    top:50px;
     z-index: -1;
 }
 
 .event:nth-of-type(odd) .event-shadow {
     left: -30px;
-    top: 50px;
 }
 
 .event:nth-of-type(even) .event-shadow {
     right: -30px;
-    top: 50px;
 }
 
 .event-month p{
     font-family: "Lily Script One", system-ui;
     font-size: 40px;
     position: absolute;
+    top: -15%;
 }
 
 .event:nth-of-type(odd) .event-month p{
-    top: -15%;
     left: 5%;
     right: auto;
 }
 
 .event:nth-of-type(even) .event-month p{
-    top: -15%;
     right: 5%;
     left: auto;
 }
+
 
 .event-box p{
     max-width: 70%;
@@ -303,19 +342,15 @@ h2 span{
 }
 
 .event:nth-of-type(odd) .event-box{
-    margin-left: 20%;
+    margin: 20% 0 0 10%;
 }
 
-.event:nth-of-type(odd) .event-box{
-    margin-right: 20px;
-}
 
-.event-btn {
+.event-btn{
     background-color: #D7E594;
     border-radius: 6px;
     padding: 5px 15px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-decoration: none;
     column-gap: 10px;
@@ -335,44 +370,6 @@ h2 span{
 }
 .btn-icon {
     padding-top: 5px;
-}
-
-.event-img {
-    position: relative;
-}
-
-.event-img img:nth-child(1){
-    position: absolute;
-    top: 0;
-    right: 5%;
-    z-index: 1;
-    max-width: 750px;
-    height: auto;
-    z-index: -1;
-}
-
-.event-img img:nth-child(2){
-    position: absolute;
-    max-width: 250px;
-    right: 15%;
-    top: 80%;
-    z-index: 1;
-}
-
-.event-img img:nth-child(3){
-    position: absolute;
-    max-width: 750px;
-    right: 15%;
-    top: 90%;
-    z-index: -1;
-}
-
-.event-img img:nth-child(4){
-    position: absolute;
-    max-width: 250px;
-    left: 15%;
-    top: 90%;
-    z-index: 1;
 }
 
 
@@ -497,8 +494,11 @@ summary.accordion_title::-webkit-details-marker {
     text-align: center;
 }
 
+.message {
+    margin: 50px 0;
+}
 .message p{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
     text-align: center;
     line-height: 48px;
@@ -517,7 +517,13 @@ summary.accordion_title::-webkit-details-marker {
     display: flex;
     align-items: center;
     flex-direction: column;
+    transition: transform 0.3s ease;
 }
+
+.sns-btn:hover {
+    transform: translateY(2px);
+}
+
 
 .sns-letter {
     display: flex;
@@ -655,7 +661,6 @@ footer {
     .container h2 {
         font-size: 32px;
     }
-    
     
 
     .faq-comment p{
