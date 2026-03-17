@@ -201,85 +201,61 @@ h2 span{
     padding: 50px 20px 0 0;
 }
 
-#events {
-    background-color: #21013206;
-}
-
 .event {
-    padding: 20px 0;
-    margin-top: 50px;
-    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    margin: 100px 0;
 }
 
 .event-content {
-    max-width: 100%;
-    min-height: 500px;
-    margin-bottom: 50px;
+    position: relative;
+}
+
+.event:nth-of-type(odd) .event-box{
+    position: absolute;
+    left: 20%;
+    top: 100px;
+}
+
+.event:nth-of-type(even) .event-box{
+    position: absolute;
+    right: 20%;
+    top: 100px;
 }
 
 .event-background {
     z-index: -1;
 }
 
-.event-img1 img:nth-child(1){
-    position: absolute;
-    top: 10%;
-    right: 0;
-    z-index: 1;
-    width: 60%;
-    height: auto;
-    z-index: -1;
+.event-img{
+    width: 50%;
+    min-height: 450px;
+    position: relative;
+}
+
+.event-img img:nth-child(1){
+    width: 600px;
+    z-index:1;
 }
 
 .event-img1 img:nth-child(2){
     position: absolute;
+    right: 10px;
+    top: 60%;
     width: 250px;
-    right: 5%;
-    top: 50%;
-    z-index: 3;
-}
-
-.event-img2 img:nth-child(1){
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 60%;
-    height: auto;
-    z-index: -1;
+    z-index: 10;
 }
 
 .event-img2 img:nth-child(2){
     position: absolute;
-    width: 300px;
-    left: 8%;
-    top: 65%;
-    z-index: 1;
+    left: 10px;
+    top: 60%;
+    width: 250px;
+    z-index: 10;
 }
-
-.event:nth-of-type(odd) .event-background{
-   margin-top: -30%;
-}
-
-.event:nth-of-type(even) .event-background{
-    position: absolute;
-    right: 0%;
-    top: -10%;
-}
-
-.event:nth-of-type(even) .event-box{
-    position: absolute;
-    right: 10%;
-}
-
-.event:nth-of-type(2) .event-box {
-    top: 50%;
-}
-
-.event:nth-of-type(4) .event-box {
-    top: 20%;
-}
-
 
 .event-box{
     background-color: #ffffff;
@@ -292,6 +268,11 @@ h2 span{
     position: relative;
     padding: 20px 0;
 }
+
+.event:nth-of-type(odd) .event-box{
+    margin-right: -100px;
+}
+
 
 .event-shadow {
     background-color: #21013230;
@@ -340,12 +321,6 @@ h2 span{
     padding: 20px 0;
     z-index: 1;
 }
-
-.event:nth-of-type(odd) .event-box{
-    margin: 20% 0 0 10%;
-}
-
-
 .event-btn{
     background-color: #D7E594;
     border-radius: 6px;
@@ -371,6 +346,8 @@ h2 span{
 .btn-icon {
     padding-top: 5px;
 }
+
+
 
 
 #q-a {
