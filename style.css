@@ -575,7 +575,7 @@ summary.accordion_title::-webkit-details-marker {
     text-align: center;
 }
 
-.sns-btn p{
+.sns-btn a {
     font-size: 21px;
     font-weight: 500;
 }
@@ -594,7 +594,7 @@ summary.accordion_title::-webkit-details-marker {
     text-decoration: none;
     border-radius: 8px;
     overflow: hidden;
-    }
+}
 
 footer {
     display: flex;
