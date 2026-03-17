@@ -200,7 +200,9 @@ h2 span{
     justify-content: flex-end;
     padding: 50px 20px 0 0;
 }
-
+#events {
+    background-color: #21013206;
+}
 .event {
     display: flex;
     align-items: flex-start;
