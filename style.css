@@ -257,6 +257,10 @@ h2 span{
     z-index: -1;
 }
 
+.event-img1 .event-img2 {
+    max-width: 700px;
+}
+
 .event-box1{
     position: absolute;
     bottom: 0;
@@ -292,11 +296,11 @@ h2 span{
     z-index: -1;
 }
 
-.event-shadow:nth-of-type(1){
+.fadein:nth-of-type(even) .event-shadow {
     left: -30px;
 }
 
-.event-shadow:nth-of-type(even)  {
+.fadein:nth-of-type(odd) .event-shadow {
     right: -30px;
 }
 
@@ -307,12 +311,12 @@ h2 span{
     top: -18%;
 }
 
-.fadein:nth-of-type(odd) .event-month p{
+.fadein:nth-of-type(even) .event-month p{
     left: 5%;
     right: auto;
 }
 
-.fadein:nth-of-type(even) .event-month p{
+.fadein:nth-of-type(odd) .event-month p{
     right: 5%;
     left: auto;
 }
