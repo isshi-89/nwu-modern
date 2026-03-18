@@ -212,7 +212,7 @@ h2 span{
 
 #events {
     background-color: #21013206;
-    margin-bottom: 150px;
+    padding: 80px 0 150px 0;
 }
 
 .event {
@@ -292,11 +292,11 @@ h2 span{
     z-index: -1;
 }
 
-.event:nth-of-type(odd) .event-shadow {
+.event-shadow:nth-of-type(1){
     left: -30px;
 }
 
-.event:nth-of-type(even) .event-shadow {
+.event-shadow:nth-of-type(even)  {
     right: -30px;
 }
 
