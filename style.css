@@ -102,9 +102,10 @@ nav a:hover {
 .container {
     margin: 0 auto;
     padding: 80px 0px;
+    max-width: 1280px;
 }
 
-.container h2{
+h2{
     text-align: center;
     font-size: 40px;
     font-weight: bold;
@@ -208,69 +209,66 @@ h2 span{
     justify-content: flex-end;
     padding: 100px 20px 0 0;
 }
+
 #events {
     background-color: #21013206;
+    margin-bottom: 150px;
 }
+
 .event {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
     width: 100%;
-    overflow: hidden;
-}
-
-
-.event-content {
     position: relative;
+    margin-bottom: 200px;
 }
 
-.fadein:nth-of-type(odd) .event-box{
+.event:nth-of-type(4){
+    padding-top: -300px;
+}
+
+.fadein:nth-of-type(even) .event-background{
     position: absolute;
-    left: 20%;
-    top: 100px;
-}
-
-.fadein:nth-of-type(even) .event-box{
-    position: absolute;
-    right: 20%;
-    top: 100px;
-}
-
-.event-background {
+    top: 0;
+    left: 0;
     z-index: -1;
 }
 
-.event-img{
-    width: 50%;
-    min-height: 450px;
+.fadein:nth-of-type(odd) .event-background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.container {
     position: relative;
-    padding: 50px;
 }
 
-.event-img img:nth-child(1){
-    width: 600px;
-    z-index:1;
-}
-
-.event:first-of-type {
-    margin-bottom: 100px;           
-}
-
-.event-img1 img:nth-child(2){
+.event-img1 {
     position: absolute;
-    right: 10px;
-    top: 60%;
-    width: 250px;
-    z-index: 10;
+    right: 0;
+    top: 0;
+    z-index: -1;
 }
 
-.event-img2 img:nth-child(2){
+.event-img2 {
     position: absolute;
-    left: 10px;
-    top: 60%;
-    width: 250px;
-    z-index: 10;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }
+
+.event-box1{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+
+.event-box2{
+    position: absolute;
+    bottom: 0;
+    right: -50%;
+}
+
 
 .event-box{
     background-color: #ffffff;
@@ -285,11 +283,6 @@ h2 span{
     min-height: 300px;
 }
 
-.fadein:nth-of-type(odd) .event-box{
-    margin-right: -100px;
-}
-
-
 .event-shadow {
     background-color: #21013230;
     width: 100%;
@@ -299,11 +292,11 @@ h2 span{
     z-index: -1;
 }
 
-.fadein:nth-of-type(odd) .event-shadow {
+.event:nth-of-type(odd) .event-shadow {
     left: -30px;
 }
 
-.fadein:nth-of-type(even) .event-shadow {
+.event:nth-of-type(even) .event-shadow {
     right: -30px;
 }
 
@@ -665,7 +658,7 @@ footer {
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
     h1 span{
         padding-left: 50px;
     }
