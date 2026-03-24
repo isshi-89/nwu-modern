@@ -4,16 +4,21 @@
     padding: 0;
     font-family: "Zen Maru Gothic", sans-serif;
     color: #210132; 
+    
 }
 
 .firstview {
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    overflow: hidden;
 }
+
 
 .fv-img img{
     max-width: 960px;
+    position: absolute;
+    top: 0;
     width: 100%;
     z-index: -1;
 }
