@@ -4,7 +4,6 @@
     padding: 0;
     font-family: "Zen Maru Gothic", sans-serif;
     color: #210132; 
-    
 }
 
 .firstview {
@@ -493,6 +492,7 @@ summary.accordion_title::-webkit-details-marker {
 
 .message {
     margin: 50px 0;
+    padding: 0 20px;
 }
 .message p{
     font-size: 28px;
@@ -707,7 +707,7 @@ footer {
     }
 
     .message p{
-        font-size: 16px;
+        font-size: 15px;
     }
 
     h1 span{
@@ -724,6 +724,58 @@ footer {
         width: 50%;
     }
 
+    .sche-box{
+        max-width: 140px;
+    }
+
+    .sche-box img{
+        max-width: 130px;
+    }
+
+    .sche-all {
+        padding: 0 20px;
+    }
+
+    .sche-boxes {
+        row-gap: 40px;
+    }
+
+    .sche-month {
+        margin: -132px 0 0 0;
+    }
+
+    .sche-month p{
+        padding: 9px 0 0 18px;
+    }
+
+    .sche-month:nth-child(6) {
+        margin: -132px 0 0 5px;
+    }
+
+    .sche-month p{
+        font-size: 24px;
+    }
+
+    .sche-month span {
+        font-size: 28px;
+    }
+
+    .sche-content {
+        display: flex;
+        height: 80px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        row-gap: 10px;
+    }
+
+    .sche-content p{
+        line-height: 24px;
+        font-size: 15px;
+    }
+
+    
     .event-shadow {
         display: none;
     }
@@ -751,7 +803,8 @@ footer {
     }
 
     .event-box h3{
-        font-size: 28px;
+        font-size: 24px;
+        padding: 0 5px;
         z-index: 1;
     }
 
@@ -772,7 +825,7 @@ footer {
 
     .accordion_title {
         font-size: 1.0em;
-}
+    }
 
 
     
